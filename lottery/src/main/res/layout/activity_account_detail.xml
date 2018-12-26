@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical"
+    tools:context="cn.zcgames.lottery.personal.view.activity.AccountDetailActivity">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/view_title_bar"/>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/common_vertical_margin"
+        android:layout_marginRight="@dimen/common_vertical_margin"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/shape_btn_round_corner_red"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/detail_tv_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btn_round_corner_red_left"
+            android:gravity="center"
+            android:text="@string/all"
+            android:textColor="@color/color_FFFFFF"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_DDDDDD"/>
+
+        <TextView
+            android:id="@+id/detail_tv_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/font_14"
+            android:background="@color/color_f4f4f4"
+            android:gravity="center"
+            android:text="@string/buy_lottery"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_DDDDDD"/>
+
+        <TextView
+            android:id="@+id/detail_tv_recharge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/font_14"
+            android:background="@color/color_f4f4f4"
+            android:gravity="center"
+            android:text="@string/recharge"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_DDDDDD"/>
+
+        <TextView
+            android:id="@+id/detail_tv_paijiang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/font_14"
+            android:background="@color/color_f4f4f4"
+            android:gravity="center"
+            android:text="@string/awards"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_DDDDDD"/>
+
+        <TextView
+            android:id="@+id/detail_tv_withDraw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/font_14"
+            android:background="@color/color_f4f4f4"
+            android:gravity="center"
+            android:text="@string/withdraw"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/detail_vp_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/menu"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/bottom"
+        android:background="@color/mine_line_color"/>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_46"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_F9E7BA"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/space_5"
+        android:paddingBottom="@dimen/space_5"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/space_17"
+            android:textSize="@dimen/font_14"
+            android:textColor="@color/color_333333"
+            android:textStyle="bold"
+            android:text="@string/total"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/font_12"
+                android:textColor="@color/color_333333"
+                tools:ignore="NestedWeights"
+                android:text="@string/buy_lottery"/>
+
+            <TextView
+                android:id="@+id/tv_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/font_12"
+                android:textColor="@color/color_app_main"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/font_12"
+                android:textColor="@color/color_333333"
+                android:text="@string/recharge"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/tv_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/font_12"
+                android:textColor="@color/color_app_main"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/font_12"
+                android:textColor="@color/color_333333"
+                android:text="@string/awards"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/tv_award"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/font_12"
+                android:textColor="@color/color_app_main"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/font_12"
+                android:textColor="@color/color_333333"
+                android:text="@string/withdraw"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/tv_withdraw"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/font_12"
+                android:textColor="@color/color_app_main"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

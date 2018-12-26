@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_app_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/always_tv_different"
+                style="@style/sumFragment_select_playStyle_btn"
+                android:layout_marginStart="0dp"
+                android:text="大小单双" />
+
+            <TextView
+                android:id="@+id/always_tv_1direct"
+                style="@style/sumFragment_select_playStyle_btn"
+                android:text="一星直选"
+                android:textColor="@color/color_app_main" />
+
+            <TextView
+                android:id="@+id/always_tv_2direct"
+                style="@style/sumFragment_select_playStyle_btn"
+
+                android:text="二星直选" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/always_tv_2group"
+                style="@style/sumFragment_select_playStyle_btn"
+                android:layout_marginStart="0dp"
+                android:text="二星组选" />
+
+            <TextView
+                android:id="@+id/always_tv_3direct"
+                style="@style/sumFragment_select_playStyle_btn"
+                android:text="三星直选" />
+
+            <TextView
+                android:id="@+id/always_tv_3group3"
+                style="@style/sumFragment_select_playStyle_btn"
+                android:text="三星组三" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/always_tv_3group6"
+                style="@style/sumFragment_select_playStyle_btn"
+                android:layout_marginStart="0dp"
+                android:text="三星组六" />
+
+            <TextView
+                android:id="@+id/always_tv_5direct"
+                style="@style/sumFragment_select_playStyle_btn"
+                android:text="五星直选" />
+
+            <TextView
+                android:id="@+id/always_tv_5all"
+                style="@style/sumFragment_select_playStyle_btn"
+                android:text="五星通选" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ac_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_40000000"
+        android:clickable="true" />
+</LinearLayout>

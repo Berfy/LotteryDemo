@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_horizontal_margin"
+        android:background="@color/mine_line_color"
+        android:padding="0.2dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/font_16"
+                android:text="玩法"
+                android:textColor="@color/color_a1a1a1" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/font_16"
+                android:text="奖金"
+                android:textColor="@color/color_a1a1a1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:textSize="@dimen/font_16"
+                android:text="和值"
+                android:textColor="@color/color_666666" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/font_16"
+                android:text="9-240元"
+                android:textColor="@color/color_app_main" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:textSize="@dimen/font_16"
+                android:text="三同号单选"
+                android:textColor="@color/color_666666" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/font_16"
+                android:text="240元"
+                android:textColor="@color/color_app_main" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:textSize="@dimen/font_16"
+                android:text="三同号通选"
+                android:textColor="@color/color_666666" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/font_16"
+                android:text="40元"
+                android:textColor="@color/color_app_main" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:textSize="@dimen/font_16"
+                android:text="三连号通选"
+                android:textColor="@color/color_666666" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="10元"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/color_app_main" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="二同号单选"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/color_666666" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/font_16"
+                android:text="80元"
+                android:textColor="@color/color_app_main" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="二同号复选"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/color_666666" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="15元"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/color_app_main" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="三不同号"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/color_666666" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="40元"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/color_app_main" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="二不同号"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/color_666666" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/font_16"
+                android:text="8元"
+                android:textColor="@color/color_app_main" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>

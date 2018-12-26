@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_horizontal_margin"
+        android:background="@color/mine_line_color"
+        android:padding="0.2dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:text="玩法"
+                android:textColor="@color/color_a1a1a1"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="奖金"
+                android:textColor="@color/color_a1a1a1"
+                android:textSize="@dimen/font_16" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="任选二"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="6元"
+                android:textColor="@color/color_app_main"
+                android:textSize="@dimen/font_16" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="任选三"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="19元"
+                android:textColor="@color/color_app_main"
+                android:textSize="@dimen/font_16" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="任选四"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="78元"
+                android:textColor="@color/color_app_main"
+                android:textSize="@dimen/font_16" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="任选五"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="540元"
+                android:textColor="@color/color_app_main"
+                android:textSize="@dimen/font_16" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="任选六"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="90元"
+                android:textColor="@color/color_app_main"
+                android:textSize="@dimen/font_16" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="任选七"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="26元"
+                android:textColor="@color/color_app_main"
+                android:textSize="@dimen/font_16" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="任选八"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="9元"
+                android:textColor="@color/color_app_main"
+                android:textSize="@dimen/font_16" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="前一"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="13元"
+                android:textColor="@color/color_app_main"
+                android:textSize="@dimen/font_16" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="前二直选"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="130元"
+                android:textColor="@color/color_app_main"
+                android:textSize="@dimen/font_16" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="前二组选"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="65元"
+                android:textColor="@color/color_app_main"
+                android:textSize="@dimen/font_16" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="前三直选"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="1170元"
+                android:textColor="@color/color_app_main"
+                android:textSize="@dimen/font_16" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="前三组选"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                style="@style/doubleColorDesc_tableTv"
+                android:layout_weight="0.5"
+                android:text="195元"
+                android:textColor="@color/color_app_main"
+                android:textSize="@dimen/font_16" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

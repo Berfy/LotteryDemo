@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/cash_tv"
+        android:layout_height="@dimen/space_44"
+        android:layout_width="111dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:textSize="@dimen/font_18"
+        android:layout_marginBottom="@dimen/space_16"
+        android:textColor="@color/color_red_ball"
+        android:background="@drawable/normal_bg_square"
+        android:focusable="true" />
+
+    </RelativeLayout>
+   
+</RelativeLayout>

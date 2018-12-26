@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical"
+    tools:context="cn.zcgames.lottery.personal.view.activity.SettingsActivity">
+
+    <include layout="@layout/view_title_bar"/>
+
+    <TextView
+        android:id="@+id/setting_tv_noticeCenter"
+        style="@style/MineFragment_item_textView"
+        android:drawableEnd="@drawable/btn_right"
+        android:paddingStart="@dimen/space_15"
+        android:paddingEnd="@dimen/space_15"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/font_14"
+        android:text="@string/mine_notice_center"
+        tools:ignore="RtlSymmetry" />
+
+    <include layout="@layout/view_line_horizontal_one"/>
+
+    <RelativeLayout
+        android:id="@+id/setting_rl_pay_pwd"
+        style="@style/MineFragment_item_textView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/space_15"
+            android:textSize="@dimen/font_14"
+            android:text="@string/mine_pay_pwd"
+            android:textColor="@color/color_333333"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/space_30"
+            android:layout_toStartOf="@+id/iv_label02"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/tv_pay_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="10dp"
+                android:text="未设置"
+                android:textColor="@color/color_app_main"/>
+
+            <ImageView
+                android:id="@+id/iv_pay_pwd"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/label_dot_red"
+                android:visibility="visible"
+                android:contentDescription="@null" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_label02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/space_5"
+            android:src="@drawable/btn_right"
+            android:paddingEnd="@dimen/space_15"
+            android:contentDescription="@null"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_horizontal_one" />
+
+    <TextView
+        android:id="@+id/settings_tv_aboutUs"
+        style="@style/MineFragment_item_textView"
+        android:drawableEnd="@drawable/btn_right"
+        android:paddingStart="@dimen/space_15"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/font_14"
+        android:text="@string/mine_about_us"
+        tools:ignore="RtlSymmetry"
+        android:visibility="gone"/>
+
+    <include layout="@layout/view_line_horizontal_one"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        style="@style/MineFragment_item_textView"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/mine_voice"
+            android:textColor="@color/color_666666"/>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@null"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_horizontal_line_min"
+        android:layout_marginTop="@dimen/space_6"
+        android:background="@color/mine_line_color"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/settings_tv_feedback"
+        style="@style/MineFragment_item_textView"
+        android:paddingStart="@dimen/space_15"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/font_14"
+        android:drawableEnd="@drawable/btn_right"
+        android:text="@string/mine_feedback"
+        tools:ignore="RtlSymmetry"
+        android:visibility="gone"/>
+
+    <include layout="@layout/view_line_horizontal_one"/>
+
+    <TextView
+        android:id="@+id/settings_tv_logout"
+        style="@style/app_btn_big"
+        android:layout_marginTop="@dimen/space_150"
+        android:text="@string/btn_logout"/>
+
+</LinearLayout>

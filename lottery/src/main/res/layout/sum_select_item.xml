@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/space_48"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_select_number_item"
+        android:layout_width="@dimen/space_26"
+        android:layout_height="@dimen/space_22"
+        android:layout_marginStart="@dimen/space_5"
+        android:text="3"
+        android:gravity="center"
+        android:textColor="@color/color_dd3048"
+        android:background="@drawable/select_num_item_normal"/>
+
+</LinearLayout>

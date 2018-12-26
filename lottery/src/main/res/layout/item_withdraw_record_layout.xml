@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white_normal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:paddingEnd="@dimen/space_15"
+        android:paddingStart="@dimen/space_15">
+
+        <TextView
+            android:id="@+id/tv_withdrawal_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥99.99"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_5"
+            android:text="2018-11-11 11:11:11"
+            android:layout_below="@id/tv_withdrawal_cash"
+            android:textColor="#FFBBBBBB"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已申请"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/font_12" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/mine_line_color" />
+
+</LinearLayout>

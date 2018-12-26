@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF"
+    android:orientation="vertical"
+    tools:context="cn.zcgames.lottery.message.view.activity.MessageDetailActivity">
+
+    <include layout="@layout/view_title_bar"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:paddingStart="15dp"
+        android:layout_marginTop="@dimen/space_8"
+        android:text=""
+        android:gravity="start|center_vertical"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/font_14"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/color_FFFFFF"
+        android:gravity="start|center_vertical"
+        android:paddingStart="12dp"
+        android:text=""
+        android:textSize="@dimen/font_12"
+        android:textColor="@color/color_aaaaaa"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:lineSpacingExtra="@dimen/space_5"
+        android:paddingLeft="@dimen/space_15"
+        android:paddingRight="@dimen/space_15"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/color_aaaaaa"
+        android:text=""
+        android:textSize="@dimen/font_14"/>
+
+</LinearLayout>

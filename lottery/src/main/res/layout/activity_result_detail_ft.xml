@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    tools:context="cn.zcgames.lottery.result.view.activity.ResultDetailActivity">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/view_title_bar" />
+
+    <ScrollView
+        android:id="@+id/data_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resultDetail_tv_gotoBuy"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/color_app_bg"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/detail_tv_sequence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/detail_tv_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/detail_ll_ballView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/detail_tv_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/detail_ll_ballView"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line_horizontal_one" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/color_app_bg" />
+
+            <include layout="@layout/view_line_horizontal_one" />
+
+            <ImageView
+                android:id="@+id/result_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/pic_result_ft" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/resultDetail_tv_gotoBuy"
+        style="@style/app_btn_big"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_10"
+        android:text="购彩投注" />
+
+</RelativeLayout>

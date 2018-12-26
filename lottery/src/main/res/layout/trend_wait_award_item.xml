@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_30"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_wait_item_period"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/color_85817d"
+        android:textSize="@dimen/font_14"
+        android:gravity="center"
+        android:text="10期"
+        />
+
+    <View
+        android:layout_width="@dimen/space_1"
+        android:layout_height="match_parent"
+        android:background="@color/color_d7d6d2"/>
+
+    <TextView
+        android:id="@+id/tv_wait_num_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:textColor="@color/color_a29e9a"
+        android:textSize="@dimen/font_14"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/space_20"
+        android:text="等待开奖"/>
+
+</LinearLayout>

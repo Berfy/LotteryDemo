@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/mine_rl_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:background="@color/color_app_main"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingLeft="@dimen/common_horizontal_margin_left"
+                    android:paddingRight="@dimen/common_horizontal_margin_left">
+
+                    <ImageView
+                        android:id="@+id/mine_iv_header"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/pic_default_avatar" />
+
+                    <TextView
+                        android:id="@+id/mine_tv_nickName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mine_iv_header"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="13dp"
+                        android:text="未登录"
+                        android:textColor="@color/color_FFFFFF"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/label"
+                        android:layout_width="30dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/label_right"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_app_main_pressed"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@color/color_FFFFFF"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:paddingBottom="13dp"
+                        android:paddingTop="13dp">
+
+                        <TextView
+                            android:id="@+id/mine_tv_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/color_666666"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="余额"
+                            android:textColor="@color/color_666666"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/mine_line_color"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:paddingBottom="13dp"
+                        android:paddingTop="13dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/mine_tv_income"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/color_666666"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="收益"
+                            android:textColor="@color/color_666666"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/mine_line_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/color_app_bg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/mine_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/mine_tv_recharge"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_white_f7f7f7"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/mine_money_recharge"
+                        android:textColor="@color/color_666666"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.2dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/mine_line_color" />
+
+                <LinearLayout
+                    android:id="@+id/mine_tv_cash"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_white_f7f7f7"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/mine_money_cash"
+                        android:textColor="@color/color_666666"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/mine_line_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/color_app_bg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/mine_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/mine_tv_history"
+                    style="@style/MineFragment_item_textView">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/label_order_record" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="@string/mine_buy_lottery_history" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/mine_line_color" />
+
+                <LinearLayout
+                    android:id="@+id/mine_tv_accountDetail"
+                    style="@style/MineFragment_item_textView">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/label_account_detail" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/btn_right"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="@string/mine_account_details" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/mine_line_color"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    style="@style/MineFragment_item_textView"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/label_account_detail" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/btn_right"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="@string/mine_account_chase" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/mine_line_color" />
+
+                <LinearLayout
+                    android:id="@+id/mine_tv_userInfo"
+                    style="@style/MineFragment_item_textView">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/label_anquanzhongxin" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/btn_right"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="@string/mine_save_center" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/mine_line_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@color/color_app_bg" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/mine_line_color" />
+
+                <LinearLayout
+                    android:id="@+id/mine_tv_settings"
+                    style="@style/MineFragment_item_textView">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/label_setting" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/btn_right"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="@string/mine_settings" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/mine_line_color" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical"
+    tools:context=".home.view.activity.doublecolor.DCDescriptionActivity">
+
+    <include layout="@layout/view_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/space_10"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_horizontal_margin_left">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="开奖时间：每十分钟一期" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="5dp"
+                    android:text="玩法规则：" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="5dp"
+                    android:text="每期从01-11开出5个号码作为中奖号码" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/color_app_bg"
+                android:gravity="center_vertical"
+                android:text="奖项设置：" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_horizontal_margin_left"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/mine_line_color"
+                android:padding="0.2dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="玩法"
+                        android:textColor="@color/color_666666" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="中奖条件"
+                        android:textColor="@color/color_666666" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="奖金"
+                        android:textColor="@color/color_666666" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="任选二" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="选2个号，猜中开奖的任意2个号" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="6元" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="任选三" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="选3个号，猜中开奖的任意3个号" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="19元" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="任选四" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="选4个号，猜中开奖的任意4个号" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="78元" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="任选五" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="选5个号，猜中开奖的任意5个号" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="540元" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="任选六" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="选6个号，猜中开奖的任意5个号" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="90元" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="任选七" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="选7个号，猜中开奖的任意5个号" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="26元" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="任选八" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="选8个号，猜中开奖的任意5个号" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="9元" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="前一" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="选1个号，猜中开奖的第1个号码" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="13元" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="前二直选" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="选2个号与开奖的前2个号相同且顺序一致" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="130元" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="前二组选" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="选2个号与开奖的前2个号相同" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="65元" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="前三直选" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="选3个号与开奖的前3个号相同且顺序一致" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="1170元" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="前三组选" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="选3个号与开奖的前3个号相同" />
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="195元" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

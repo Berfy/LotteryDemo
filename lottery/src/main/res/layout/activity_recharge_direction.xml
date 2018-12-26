@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF"
+    android:orientation="vertical"
+    tools:context=".personal.view.activity.RechargeDirectionActivity">
+
+    <include
+        android:id="@+id/title_view"
+        layout="@layout/view_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/space_24"
+        android:layout_marginStart="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_15"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝充值："
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_4"
+            android:text="需要您的手机安装支付宝APP，在充值二维码页面选择打开支付宝，则会跳转至支付宝进行充值。"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_26"
+            android:text="微信充值："
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_4"
+            android:text="在跳转至二维码付款页面后，需要您将当前页面进行截屏，再打开微信APP，选择扫一扫。"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/font_14" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

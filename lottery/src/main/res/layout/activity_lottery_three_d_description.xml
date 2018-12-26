@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical"
+    tools:context=".home.view.activity.doublecolor.DCDescriptionActivity">
+
+    <include layout="@layout/view_title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_horizontal_margin_left">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="开奖时间：每天20:30开奖"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="玩法规则：每期开出3位数作为中奖号码，百、十、个位每位号码取值范围0~9"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/color_app_bg"
+                android:gravity="center_vertical"
+                android:text="奖项设置："/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_horizontal_margin_left"
+                android:layout_marginTop="@dimen/common_horizontal_margin"
+                android:background="@color/mine_line_color"
+                android:padding="0.2dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="奖级"
+                        android:textColor="@color/color_666666"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="中奖条件"
+                        android:textColor="@color/color_666666"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="奖金"
+                        android:textColor="@color/color_666666"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="直选3"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="选号与开奖号码一致"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="1,040"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="组选3"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="开奖号码（2位相同）包含所选2号码，顺序不限"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="346"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.5"
+                        android:text="组选6"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:padding="10dp"
+                        android:text="开奖号码（各不相同）为所选3号码，顺序不限"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_weight="0.5"
+                        android:text="173"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

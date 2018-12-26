@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/danLabel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingStart="@dimen/space_15"
+                android:paddingEnd="20dp"
+                android:text="每位至少选择一个号码"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/font_14" />
+
+            <RelativeLayout
+                android:id="@+id/one_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_15"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/label10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:gravity="center"
+                    android:text="万位"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/font_14" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/one_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toEndOf="@+id/label10" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/mine_line_color" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"
+                android:background="@color/color_DDDDDD" />
+
+            <RelativeLayout
+                android:id="@+id/tow_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_15"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/label11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:gravity="center"
+                    android:text="千位"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/font_14" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/tow_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/label11" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/mine_line_color" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"
+                android:background="@color/color_DDDDDD" />
+
+            <LinearLayout
+                android:id="@+id/three_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_15"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/label12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="百位"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/font_14" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/three_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toEndOf="@+id/label12" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_marginRight="@dimen/space_15"
+                    android:background="@color/color_DDDDDD" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_show_info_bottom" />
+</RelativeLayout>

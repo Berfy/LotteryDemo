@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="@dimen/space_0.5"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/order_ll"
+            android:layout_alignTop="@+id/order_ll"
+            android:background="@color/color_E2DFD8" />
+
+        <LinearLayout
+            android:id="@+id/order_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_normal"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_10">
+
+            <RelativeLayout
+                android:id="@+id/order_rl_doubleColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/result_ll_shuangseqiuinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_item_number"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/order_item_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/font_12" />
+
+                    <TextView
+                        android:id="@+id/order_item_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_8"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/font_12" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/order_item_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:minHeight="30dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text=""
+                    android:textColor="@color/color_red_ball"
+                    android:textSize="@dimen/font_16"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/space_5">
+
+                <TextView
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="@dimen/space_20"
+                    android:layout_margin="@dimen/space_5"
+                    android:background="@drawable/ic_lottery_order_delete" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/delete_tv"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_app_main"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/space_0.5"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/order_ll"
+            android:layout_alignTop="@+id/order_ll"
+            android:background="@color/color_E2DFD8" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_horizontal_line_min"
+        android:background="@drawable/ic_lottery_order_ball_list_line" />
+
+    <View
+        android:id="@+id/v_list_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_20"
+        android:layout_marginBottom="@dimen/space_10"
+        android:background="@drawable/ic_lottery_order_ball_list_bottom"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_30"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_win_num_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_win_item_period"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_85817d"
+            android:textSize="@dimen/font_14"
+            android:gravity="center"
+            android:text="10期"
+            />
+
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="match_parent"
+            android:background="@color/color_d7d6d2"/>
+
+        <TextView
+            android:id="@+id/tv_win_item_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textColor="@color/color_a29e9a"
+            android:textSize="@dimen/font_14"
+            android:gravity="center"
+            android:text="2 3 4"/>
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="match_parent"
+            android:background="@color/color_d7d6d2"/>
+
+        <TextView
+            android:id="@+id/tv_win_item_key3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_a29e9a"
+            android:textSize="@dimen/font_14"
+            android:gravity="center"
+            android:text="9"/>
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="match_parent"
+            android:background="@color/color_d7d6d2"/>
+
+        <TextView
+            android:id="@+id/tv_win_item_key4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_a29e9a"
+            android:textSize="@dimen/font_14"
+            android:gravity="center"
+            android:text="小"/>
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="match_parent"
+            android:background="@color/color_d7d6d2"/>
+
+        <TextView
+            android:id="@+id/tv_win_item_key5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_a29e9a"
+            android:textSize="@dimen/font_14"
+            android:gravity="center"
+            android:text="单"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wait_num"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_30"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_wait_item_period"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.075"
+        android:textColor="@color/color_85817d"
+        android:textSize="@dimen/font_14"
+        android:gravity="center"
+        android:text="10期"
+        />
+
+    <View
+        android:layout_width="@dimen/space_1"
+        android:layout_height="match_parent"
+        android:background="@color/color_d7d6d2"/>
+
+    <TextView
+        android:id="@+id/tv_wait_num_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:textColor="@color/color_a29e9a"
+        android:textSize="@dimen/font_14"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/space_20"
+        android:text="等待开奖"/>
+
+</LinearLayout>
+
+</RelativeLayout>

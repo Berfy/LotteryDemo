@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.view.activity.sevenhappy.SevenHappyActivity">
+
+    <LinearLayout
+        android:id="@+id/seven_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <cn.berfy.sdk.mvpbase.view.StatusMarginBar
+            android:layout_width="match_parent"
+            app:bar_back_color="@color/color_app_main"
+            android:layout_height="wrap_content"></cn.berfy.sdk.mvpbase.view.StatusMarginBar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/color_app_main">
+
+            <ImageButton
+                android:id="@+id/title_back"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@mipmap/btn_back" />
+
+            <LinearLayout
+                android:id="@+id/seven_ll_changeStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="七乐彩"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/imageView_label_sevenColor"
+                    android:layout_width="17dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:src="@drawable/label_jiantou_down"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+           <!-- <TextView
+                android:id="@+id/title_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="玩法说明"
+                android:textColor="@color/color_app_white"
+                android:textSize="12dp" />-->
+
+            <ImageButton
+                android:id="@+id/title_right_button"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src="@drawable/label_message"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seven_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_5"
+        android:layout_below="@+id/seven_titleBar"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/seven_tv_sequence"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color_app_main"
+                android:text=""
+                android:textSize="@dimen/font_12" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/seven_rl_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/seven_ib_history"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/seven_tv_containView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color_red_ball" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/seven_ib_history"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/label_daosanjiao" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_horizontal_line_min"
+        android:layout_below="@+id/seven_tips"
+        android:background="@color/mine_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/seven_ll_hideLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_app_white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/seven_rv_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_app_white" />
+
+            <include layout="@layout/view_line_horizontal_one" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="至少选择7个球" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/seven_rv_ballNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/view_show_info_bottom" />
+</RelativeLayout>

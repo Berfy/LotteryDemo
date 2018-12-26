@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical"
+    tools:context="cn.zcgames.lottery.personal.view.activity.PhaseDetailActivity">
+
+    <include layout="@layout/view_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_74"
+        android:layout_marginEnd="@dimen/space_6"
+        android:layout_marginStart="@dimen/space_6"
+        android:layout_marginTop="@dimen/space_6"
+        android:background="@color/color_FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_lottery"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30"
+            android:layout_marginStart="@dimen/space_9"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_place" />
+
+        <TextView
+            android:id="@+id/chaseDetail_tv_lotteryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingStart="14dp"
+            android:text="快三"
+            android:textStyle="bold"
+            android:textColor="@color/color_app_main"
+            android:textSize="@dimen/font_14"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_10"
+            android:text="追期详情"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/space_6"
+            android:paddingStart="@dimen/space_6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_9"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="方案金额："
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/chaseDetail_tv_orderMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_app_main"
+                    android:textSize="@dimen/font_14"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_9">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="追期期次："
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/chaseDetail_tv_chase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="30dp"
+                    android:text=""
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/font_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_9">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="税后奖金 ："
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/chaseDetail_tv_wardMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_app_main"
+                    android:textSize="@dimen/font_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingStart="@dimen/space_9"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="投注时间："
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/chaseDetail_tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/font_14" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_9"
+                android:paddingTop="10dp"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="选号详情：" />
+
+                <TextView
+                    android:id="@+id/chaseDetail_tv_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_red"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_9"
+                android:paddingTop="@dimen/space_10"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="玩         法"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_62"
+                    android:text="投注号码"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/font_14" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/chaseDetail_rv_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_FFFFFF"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never"
+                    android:paddingBottom="@dimen/space_17"
+                    android:paddingStart="@dimen/space_9"
+                    android:paddingTop="@dimen/space_3"
+                    android:scrollbars="none"
+                    tools:ignore="RtlSymmetry" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/parent_ll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/space_1"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/chaseStatus_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/space_9"
+                    android:text="期次"
+                    android:textSize="@dimen/font_14"
+                    android:textColor="@color/color_999999"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/chaseStatus_status"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="订单状态"
+                    android:textSize="@dimen/font_14"
+                    android:textColor="@color/color_999999"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/chaseStatus_win"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_14"
+                    android:text="开奖号码"
+                    android:textColor="@color/color_999999"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/chaseStatus_ward"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="中奖状态"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_14"
+                    android:textColor="@color/color_999999"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/chaseDetail_rv_ward"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line_horizontal_one" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

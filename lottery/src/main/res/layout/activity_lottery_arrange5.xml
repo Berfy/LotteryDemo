@@ -1,0 +1,326 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/arrange5_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_app_main"
+        android:orientation="vertical">
+
+        <cn.berfy.sdk.mvpbase.view.StatusMarginBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_back_color="@color/color_app_main"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/color_app_main">
+
+            <ImageButton
+                android:id="@+id/title_back"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@mipmap/btn_back" />
+
+            <LinearLayout
+                android:id="@+id/arrange5_ll_changeStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="排列五"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/imageView_label_alwaysColor"
+                    android:layout_width="17dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:src="@drawable/label_jiantou_down"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/title_right_button"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src="@drawable/label_message"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/arrange5_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arrange5_titleBar"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_5">
+
+
+        <TextView
+            android:id="@+id/arrange5_tv_sequence"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textColor="@color/color_app_main"
+            android:textSize="@dimen/font_12" />
+
+        <RelativeLayout
+            android:id="@+id/arrange5_rl_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/label_daosanjiao" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_horizontal_line_min"
+        android:layout_below="@+id/arrange5_tips"
+        android:background="@color/mine_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/arrange5_ll_hideLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_app_white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/arrange5History_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_app_white" />
+
+            <include layout="@layout/view_line_horizontal_one" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/label0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="每位至少选择一个号码"
+            android:textSize="12dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/label0"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_million"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/label10"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_bg_gray"
+                        android:gravity="center"
+                        android:text="万位"
+                        android:textSize="12dp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView_million"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/label10" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/mine_line_color" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_thousand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/label11"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_bg_gray"
+                        android:gravity="center"
+                        android:text="千位"
+                        android:textSize="12dp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView_thousand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/label11" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/mine_line_color" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_hundred"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/label1"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_bg_gray"
+                        android:gravity="center"
+                        android:text="百位"
+                        android:textSize="12dp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView_hundred"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/label1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/mine_line_color" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/label2"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_bg_gray"
+                        android:gravity="center"
+                        android:text="十位"
+                        android:textSize="12dp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView_ten"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/label2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/mine_line_color" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/label3"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_bg_gray"
+                        android:gravity="center"
+                        android:text="个位"
+                        android:textSize="12dp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/label3" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/view_show_info_bottom" />
+</RelativeLayout>

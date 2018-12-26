@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical"
+    tools:context="cn.zcgames.lottery.personal.view.activity.IdentityInfoActivity">
+
+    <include layout="@layout/view_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/identify_ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_24"
+            android:text="请完善您的资料"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/space_15"
+            android:textSize="@dimen/font_12"
+            android:textColor="@color/color_888888"
+            tools:ignore="RtlSymmetry" />
+
+        <include layout="@layout/view_line_horizontal_one" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:background="@color/color_FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/common_horizontal_margin_left"
+                android:textColor="@color/color_888888"
+                android:gravity="center"
+                android:text="真实姓名：" />
+
+            <EditText
+                android:id="@+id/identify_ed_realName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="输入本人的真实姓名"
+                android:maxLength="11"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_888888"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="@dimen/font_14" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line_horizontal_one" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:background="@color/color_FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/common_horizontal_margin_left"
+                android:gravity="center"
+                android:text="身份证号："
+                android:textColor="@color/color_888888"/>
+
+            <EditText
+                android:id="@+id/identify_ed_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="输入本人的身份证号码"
+                android:maxLength="19"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_888888"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="@dimen/font_14" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line_horizontal_one" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:background="@color/color_FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/common_horizontal_margin_left"
+                android:gravity="center"
+                android:text="手机号："
+                android:textColor="@color/color_888888"/>
+
+            <EditText
+                android:id="@+id/phone_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入有效的手机号"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_888888"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="@dimen/font_14" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line_horizontal_one"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:layout_marginTop="@dimen/common_horizontal_line_min"
+            android:background="@color/color_FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/common_horizontal_margin_left"
+                android:gravity="center"
+                android:text="验证码："
+                android:textColor="@color/color_888888"/>
+
+            <EditText
+                android:id="@+id/et_verify_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/mine_input_verify_code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textSize="14sp"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_9D9D9D"
+                android:textCursorDrawable="@drawable/cursor"/>
+
+            <TextView
+                android:id="@+id/get_verify_code"
+                android:layout_width="@dimen/space_64"
+                android:layout_height="@dimen/space_28"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="13dp"
+                android:background="@drawable/shape_bg_btn_round_corner_blue"
+                android:gravity="center"
+                android:text="@string/mine_get_verify_code"
+                android:textColor="@color/white_normal"
+                android:textSize="@dimen/font_10"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <include layout="@layout/view_line_horizontal_one"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/identify_btn_next"
+            android:layout_marginTop="@dimen/space_51"
+            style="@style/app_btn_big"
+            android:enabled="false"
+            android:text="@string/btn_ok" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_13"
+        android:text="注意事项:"
+        android:textColor="@color/color_aaaaaa"
+        android:textSize="@dimen/font_12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_marginStart="@dimen/space_15"
+        android:layout_marginEnd="@dimen/space_18"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/tips_identify_tip2"
+        android:textColor="@color/color_aaaaaa"
+        android:textSize="@dimen/font_10" />
+
+</LinearLayout>

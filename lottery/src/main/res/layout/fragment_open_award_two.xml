@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_30"
+        android:orientation="horizontal"
+        android:background="@color/color_f3f3ea">
+
+        <LinearLayout
+            android:id="@+id/ll_rank_periods_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_open_periods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_504f58"
+                android:textSize="@dimen/font_12"
+                android:gravity="center"
+                android:text="期数"
+                />
+
+            <ImageView
+                android:id="@+id/iv_rank_icon_two"
+                android:layout_width="@dimen/space_10"
+                android:layout_height="@dimen/space_12"
+                android:layout_toRightOf="@id/tv_open_periods"
+                android:src="@drawable/lottery_rank_up"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="match_parent"
+            android:background="@color/color_d7d6d2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textColor="@color/color_504f58"
+            android:textSize="@dimen/font_12"
+            android:gravity="center"
+            android:text="开奖号码"/>
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="match_parent"
+            android:background="@color/color_d7d6d2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textColor="@color/color_504f58"
+            android:textSize="@dimen/font_12"
+            android:gravity="center"
+            android:text="形态"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_open_award_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:splitMotionEvents="false"
+        android:background="@color/color_white"/>
+
+    <FrameLayout
+        android:id="@+id/fl_award_two_select_num"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_100"></FrameLayout>
+
+</LinearLayout>

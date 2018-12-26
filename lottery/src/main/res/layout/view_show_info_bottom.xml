@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_00000000">
+
+    <RelativeLayout
+        android:id="@+id/threeD_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_FFFFFF"
+        android:orientation="horizontal">
+
+        <include layout="@layout/view_line_horizontal_one" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/threeD_btn_machine"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/space_60"
+                android:layout_height="@dimen/space_30"
+                android:background="@drawable/selector_lottery_machine"
+                android:text="机选"
+                android:textColor="@color/color_app_main"
+                android:textSize="@dimen/font_14" />
+
+            <Button
+                android:id="@+id/threeD_ib_delete"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/space_60"
+                android:layout_height="@dimen/space_30"
+                android:visibility="gone"
+                android:background="@drawable/selector_lottery_clear"
+                android:text="清空"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/threeD_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/view_label"
+                android:gravity="center_vertical"
+                android:text="0注"
+                android:textColor="@color/color_333333"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/threeD_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/threeD_tv_num"
+                android:gravity="center_vertical"
+                android:text="0元"
+                android:textColor="@color/color_333333"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/threeD_tv_ok"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/selector_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/btn_ok"
+            android:textColor="@color/color_ECE7E7" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_24"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/space_15"
+        android:text="中奖通知"
+        android:textColor="@color/color_888888"
+        android:textSize="@dimen/font_12"
+        tools:ignore="RtlSymmetry" />
+
+    <include layout="@layout/view_line_horizontal_one" />
+
+    <RelativeLayout
+        android:id="@+id/rl_win_notify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_52"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/space_15"
+        android:background="@color/color_FFFFFF"
+        android:textColor="@color/color_666666"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="中奖通知"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/font_14" />
+
+        <ToggleButton
+            android:id="@+id/toggle_win"
+            android:layout_width="@dimen/space_51"
+            android:layout_height="@dimen/space_32"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/space_15"
+            android:background="@drawable/selector_switch"
+            android:checked="true"
+            android:text="@null"
+            android:textOff="@null"
+            android:textOn="@null" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_horizontal_one" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="打开设置即可在开奖后获取中奖通知，为了避免频繁打扰，暂不支持快频彩"
+        android:textColor="@color/color_999999"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_24"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/space_15"
+        android:text="开奖通知"
+        android:textColor="@color/color_888888"
+        android:textSize="@dimen/font_12"
+        tools:ignore="RtlSymmetry" />
+</LinearLayout>

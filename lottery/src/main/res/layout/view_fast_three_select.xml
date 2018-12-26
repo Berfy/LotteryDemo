@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/color_app_white"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/fast3_tv_sum"-->
+    <!--style="@style/sumFragment_select_playStyle_btn"-->
+    <!--android:text="和值"-->
+    <!--android:layout_marginLeft="0dp"-->
+    <!--android:textColor="@color/color_app_main"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/fast3_tv_3same_single"-->
+    <!--style="@style/sumFragment_select_playStyle_btn"-->
+    <!--android:text="三同号单选"/>-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/fast3_tv_3same_all"-->
+    <!--style="@style/sumFragment_select_playStyle_btn"-->
+    <!--android:text="三同号通选"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/fast3_tv_3to_all"-->
+    <!--android:layout_marginLeft="0dp"-->
+    <!--style="@style/sumFragment_select_playStyle_btn"-->
+    <!--android:text="三连号通选"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/fast3_tv_2same_single"-->
+    <!--style="@style/sumFragment_select_playStyle_btn"-->
+    <!--android:text="二同号单选"/>-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/fast3_tv_2same_more"-->
+    <!--style="@style/sumFragment_select_playStyle_btn"-->
+    <!--android:text="二同号复选"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/fast3_tv_3different"-->
+    <!--style="@style/sumFragment_select_playStyle_btn"-->
+    <!--android:layout_marginLeft="0dp"-->
+    <!--android:text="三不同号"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/fast3_tv_2different"-->
+    <!--style="@style/sumFragment_select_playStyle_btn"-->
+    <!--android:text="二不同号"/>-->
+
+
+    <!--<TextView-->
+    <!--style="@style/sumFragment_select_playStyle_btn"-->
+    <!--android:background="@color/color_app_bg"/>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_app_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/fast3_tv_sum"
+                style="@style/sumFragment_select_playStyle_btn"
+                android:text="和值"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/color_app_main"/>
+
+            <TextView
+                android:id="@+id/fast3_tv_3same_single"
+                style="@style/sumFragment_select_playStyle_btn"
+                android:text="三同号"/>
+
+            <TextView
+                android:id="@+id/fast3_tv_2same_more"
+                style="@style/sumFragment_select_playStyle_btn"
+                android:text="二同号"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/fast3_tv_3different"
+                style="@style/sumFragment_select_playStyle_btn"
+                android:layout_marginLeft="0dp"
+                android:text="三不同号"/>
+
+            <TextView
+                android:id="@+id/fast3_tv_2different"
+                style="@style/sumFragment_select_playStyle_btn"
+                android:text="二不同号"/>
+
+            <TextView
+                style="@style/sumFragment_select_playStyle_btn"
+                android:background="@color/color_app_bg"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_40000000"
+        android:clickable="true"/>
+</LinearLayout>

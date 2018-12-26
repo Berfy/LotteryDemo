@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical"
+    tools:context="cn.zcgames.lottery.personal.view.activity.SetNicknameActivity">
+
+    <include layout="@layout/view_title_bar"/>
+
+
+    <EditText
+        android:id="@+id/nickName_et_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_FFFFFF"
+        android:hint="新昵称"
+        android:paddingStart="@dimen/space_15"
+        android:maxLines="1"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textColorHint="@color/color_999999"
+        android:textSize="14sp"
+        tools:ignore="RtlSymmetry" />
+
+    <include layout="@layout/view_line_horizontal_one"/>
+
+    <TextView
+        android:id="@+id/nickName_tv_ok"
+        style="@style/app_btn_big"
+        android:layout_marginTop="@dimen/space_82"
+        android:text="@string/btn_update"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_17"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.2dp"
+            android:layout_weight="3"
+            android:background="@color/mine_line_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@string/tips_tip"
+            android:textSize="@dimen/font_12"
+            android:textColor="@color/color_app_main"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.2dp"
+            android:layout_weight="3"
+            android:background="@color/mine_line_color"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_4"
+        android:text="为保障平台秩序"
+        android:textColor="@color/color_aaaaaa"
+        android:textSize="@dimen/font_10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_5"
+        android:text="昵称唯一且只能修改一次"
+        android:textColor="@color/color_aaaaaa"
+        android:textSize="@dimen/font_10"/>
+
+</LinearLayout>

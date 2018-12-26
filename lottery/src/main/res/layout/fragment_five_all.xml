@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/label0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="每位至少选择1个号码"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/font_14" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/label0"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_million"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/label10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333333"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:gravity="center"
+                    android:text="万位"
+                    android:textSize="@dimen/font_14" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_million"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/label10" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/color_DDDDDD"
+                    android:layout_marginStart="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_5"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_thousand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/label11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333333"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:gravity="center"
+                    android:text="千位"
+                    android:textSize="@dimen/font_14" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_thousand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/label11" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/color_DDDDDD"
+                    android:layout_marginStart="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_5"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hundred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/label1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333333"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:gravity="center"
+                    android:text="百位"
+                    android:textSize="@dimen/font_14" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_hundred"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/label1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/color_DDDDDD"
+                    android:layout_marginStart="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_5"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/label2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333333"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:gravity="center"
+                    android:text="十位"
+                    android:textSize="@dimen/font_14" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/label2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/color_DDDDDD"
+                    android:layout_marginStart="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_5"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/label3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333333"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="个位"
+                    android:textSize="@dimen/font_14" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/label3" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/view_show_info_bottom" />
+</RelativeLayout>

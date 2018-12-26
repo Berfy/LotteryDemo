@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_below="@+id/doubleColor_titleBar"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/doubleColor_rl_activeNormal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/doubleColor_titleBar"
+        android:background="@android:color/white"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/active_tv_tipNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@color/color_app_main"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/tips_select_min_red_ball"
+            android:textColor="@color/color_FFFFFF"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/btn_more"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/active_rv_redBall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/active_tv_tipNormal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"/>
+
+
+        <TextView
+            android:id="@+id/active_tv_tipNormal2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/active_rv_redBall"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_blue_ball"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/tips_select_min_blue_ball"
+            android:textColor="@color/color_FFFFFF"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/active_rv_blueBall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/active_tv_tipNormal2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

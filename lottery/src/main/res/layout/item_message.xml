@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_5"
+        android:background="@color/color_f4f4f4" />
+
+    <RelativeLayout
+        android:id="@+id/rl_system_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:background="@drawable/selector_bg_white_f7f7f7">
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_horizontal_line_min"
+            android:background="@color/mine_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/message_ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_36"
+            android:layout_below="@+id/line1"
+            android:paddingEnd="@dimen/space_15"
+            android:paddingStart="@dimen/space_15">
+
+            <TextView
+                android:id="@+id/message_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/message_tv_time"
+                android:gravity="center_vertical"
+                android:text="恭喜：中了特等奖"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/font_14" />
+
+            <TextView
+                android:id="@+id/message_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:text="2017-05-08 16:44"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/font_12" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/message_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_ll_title"
+            android:layout_marginEnd="@dimen/space_15"
+            android:layout_marginStart="@dimen/space_15"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="2"
+            android:text="中奖了"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/message_tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_32"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/message_tv_content"
+            android:gravity="center"
+            android:paddingEnd="@dimen/space_15"
+            android:text="查看详情"
+            android:drawableEnd="@drawable/arrow"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/font_12"
+            tools:ignore="RtlSymmetry" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_horizontal_line_min"
+            android:layout_alignParentBottom="true"
+            android:background="@color/mine_line_color" />
+    </RelativeLayout>
+</RelativeLayout>

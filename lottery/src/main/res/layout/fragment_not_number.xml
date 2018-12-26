@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/label0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/space_15"
+        android:paddingRight="@dimen/space_15"
+        android:paddingTop="5dp"
+        android:text="每位至少选择1个号码"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/font_14" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/label0"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/label2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333333"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:gravity="center"
+                    android:text="十位"
+                    android:textSize="@dimen/font_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/label2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ten_big"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/shape_bg_ball_normal"
+                        android:gravity="center"
+                        android:text="大" />
+
+                    <TextView
+                        android:id="@+id/ten_small"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/shape_bg_ball_normal"
+                        android:gravity="center"
+                        android:text="小" />
+
+                    <TextView
+                        android:id="@+id/ten_single"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/shape_bg_ball_normal"
+                        android:gravity="center"
+                        android:text="单" />
+
+                    <TextView
+                        android:id="@+id/ten_double"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/shape_bg_ball_normal"
+                        android:gravity="center"
+                        android:text="双" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="@dimen/space_5"
+                    android:layout_marginStart="@dimen/space_5"
+                    android:background="@color/color_DDDDDD" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/label3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333333"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:gravity="center"
+                    android:text="个位"
+                    android:textSize="@dimen/font_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/label3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/one_big"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/shape_bg_ball_normal"
+                        android:gravity="center"
+                        android:text="大" />
+
+                    <TextView
+                        android:id="@+id/one_small"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/shape_bg_ball_normal"
+                        android:gravity="center"
+                        android:text="小" />
+
+                    <TextView
+                        android:id="@+id/one_single"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/shape_bg_ball_normal"
+                        android:gravity="center"
+                        android:text="单" />
+
+                    <TextView
+                        android:id="@+id/one_double"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/shape_bg_ball_normal"
+                        android:gravity="center"
+                        android:text="双" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="@dimen/space_5"
+                    android:layout_marginStart="@dimen/space_5"
+                    android:background="@color/color_DDDDDD" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottom"
+        layout="@layout/view_show_info_bottom" />
+
+</RelativeLayout>

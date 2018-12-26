@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_normal"
+    android:orientation="vertical"
+    tools:context="cn.zcgames.lottery.personal.view.activity.WithDrawActivity">
+
+    <include layout="@layout/view_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/withdraw_way_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_15"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="提现方式:"
+            android:textColor="@color/color_888888"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/withdraw_way_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/btn_right"
+            android:padding="@dimen/space_5"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/font_14" />
+
+    </LinearLayout>
+
+    <include layout="@layout/view_line_horizontal_one" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:paddingEnd="@dimen/space_15"
+        android:paddingStart="@dimen/space_15"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="提取金额"
+            android:textColor="@color/color_666666" />
+
+        <TextView
+            android:id="@+id/yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical|end"
+            android:text="元"
+            android:textColor="@color/color_666666" />
+
+        <TextView
+            android:id="@+id/tv_withdrawal_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/space_2"
+            android:layout_toStartOf="@+id/yuan"
+            android:gravity="center_vertical|end"
+            android:text="0"
+            android:textColor="@color/color_666666" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/space_2"
+            android:layout_toStartOf="@id/tv_withdrawal_cash"
+            android:gravity="center_vertical|end"
+            android:text="可提取金额"
+            android:textColor="@color/color_666666" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_horizontal_one" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/space_15"
+        android:paddingStart="@dimen/space_15"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:layout_width="@dimen/space_35"
+            android:layout_height="@dimen/space_37"
+            android:contentDescription="@null"
+            android:src="@drawable/label_money" />
+
+
+        <EditText
+            android:id="@+id/withdrawal_cash_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入提现金额"
+            android:textColorHint="@color/color_999999"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="15sp"
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:id="@+id/all_withdrawal_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="全部提现"
+            android:textColor="@color/color_red_ball"
+            android:textSize="@dimen/font_14" />
+
+    </LinearLayout>
+
+    <include layout="@layout/view_line_horizontal_one" />
+
+    <TextView
+        android:id="@+id/warning_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_marginStart="@dimen/space_15"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/color_red_ball"
+        android:textSize="@dimen/font_14"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_marginTop="@dimen/space_100"
+        style="@style/app_btn_big"
+        android:enabled="true"
+        android:text="@string/commit" />
+
+    <TextView
+        android:id="@+id/tv_withdraw_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_999999"
+        android:layout_marginStart="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_5"
+        android:textSize="@dimen/font_14"
+        android:text="" />
+
+</LinearLayout>

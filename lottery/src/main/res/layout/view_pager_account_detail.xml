@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <cn.zcgames.lottery.view.common.refreshview.XRefreshView
+        android:id="@+id/xrefreshview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/viewPager_rv_content"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"/>
+    </cn.zcgames.lottery.view.common.refreshview.XRefreshView>
+
+    <LinearLayout
+        android:id="@+id/viewPager_tv_noData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_app_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/label_no_data"/>
+
+        <TextView
+            android:id="@+id/tv_empty_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="@string/tips_no_record_history"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/color_app_main"
+            android:gravity="center"
+            android:onClick="gotoBuyLottery"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="立即投注"
+            android:textColor="@color/color_FFFFFF"/>
+    </LinearLayout>
+</RelativeLayout>

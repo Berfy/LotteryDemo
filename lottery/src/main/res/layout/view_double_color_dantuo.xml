@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_below="@+id/doubleColor_titleBar"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/doubleColor_rl_activeDantuo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/doubleColor_titleBar"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/active_tv_tip"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:background="@color/color_app_main"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="胆码区 至少选择1个，最多5个红球"
+            android:textColor="@color/color_FFFFFF"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/active_rv_redBallDan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/active_tv_tip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/active_tv_tip2"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/active_rv_redBallDan"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_app_main"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="拖码区 至少选择2个红球"
+            android:textColor="@color/color_FFFFFF"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/active_rv_redBallTuo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/active_tv_tip2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/active_tv_tip3"
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/active_rv_redBallTuo"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_blue_ball"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="至少选择1个蓝球"
+            android:textColor="@color/color_FFFFFF"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/active_rv_blueBallDanTuo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/active_tv_tip3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

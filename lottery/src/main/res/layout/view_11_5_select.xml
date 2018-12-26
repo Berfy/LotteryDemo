@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_app_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="—— 普通投注 ——"
+            android:textColor="@color/color_app_main"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/playAny2"
+                style="@style/eleven5_select_playStyle_btn"
+                android:layout_marginLeft="0dp"
+                android:text="任选二"
+                android:textColor="@color/color_app_main"/>
+
+            <TextView
+                android:id="@+id/playAny3"
+                style="@style/eleven5_select_playStyle_btn"
+                android:text="任选三"/>
+
+
+            <TextView
+                android:id="@+id/playAny4"
+                style="@style/eleven5_select_playStyle_btn"
+                android:text="任选四"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/playAny5"
+                style="@style/eleven5_select_playStyle_btn"
+                android:layout_marginLeft="0dp"
+                android:text="任选五"/>
+
+            <TextView
+                android:id="@+id/playAny6"
+                style="@style/eleven5_select_playStyle_btn"
+                android:text="任选六"/>
+
+
+            <TextView
+                android:id="@+id/playAny7"
+                style="@style/eleven5_select_playStyle_btn"
+                android:text="任选七"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/playAny8"
+                style="@style/eleven5_select_playStyle_btn"
+                android:layout_marginLeft="0dp"
+                android:text="任选八"/>
+
+            <TextView
+                android:id="@+id/playFontDirect1"
+                style="@style/eleven5_select_playStyle_btn"
+                android:text="前一直选"/>
+
+
+            <TextView
+                android:id="@+id/playFontDirect2"
+                style="@style/eleven5_select_playStyle_btn"
+                android:text="前二直选"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/playFontDirect3"
+                style="@style/eleven5_select_playStyle_btn"
+                android:layout_marginLeft="0dp"
+                android:text="前三直选"/>
+
+            <TextView
+                android:id="@+id/playFontGroup2"
+                style="@style/eleven5_select_playStyle_btn"
+                android:text="前二组选"/>
+
+            <TextView
+                android:id="@+id/playFontGroup3"
+                style="@style/eleven5_select_playStyle_btn"
+                android:text="前三组选"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="—— 胆拖投注 ——"
+            android:textColor="@color/color_app_main"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/playAnyDan2"
+                style="@style/eleven5_select_playStyle_btn"
+                android:layout_marginLeft="0dp"
+                android:text="任选二"/>
+
+            <TextView
+                android:id="@+id/playAnyDan3"
+                style="@style/eleven5_select_playStyle_btn"
+                android:text="任选三"/>
+
+
+            <TextView
+                android:id="@+id/playAnyDan4"
+                style="@style/eleven5_select_playStyle_btn"
+                android:text="任选四"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/playAnyDan5"
+                style="@style/eleven5_select_playStyle_btn"
+                android:layout_marginLeft="0dp"
+                android:text="任选五"/>
+
+            <TextView
+                android:id="@+id/playAnyDan6"
+                style="@style/eleven5_select_playStyle_btn"
+                android:text="任选六"/>
+
+
+            <TextView
+                android:id="@+id/playAnyDan7"
+                style="@style/eleven5_select_playStyle_btn"
+                android:text="任选七"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/playAnyDan8"
+                style="@style/eleven5_select_playStyle_btn"
+                android:layout_marginLeft="0dp"
+                android:text="任选八"/>
+
+            <TextView
+                android:id="@+id/playFontGroupDan2"
+                style="@style/eleven5_select_playStyle_btn"
+                android:text="前二组选"/>
+
+            <TextView
+                android:id="@+id/playFontGroupDan3"
+                style="@style/eleven5_select_playStyle_btn"
+                android:text="前三组选"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/eleven5_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_40000000"
+        android:clickable="true"
+        android:focusable="true" />
+</LinearLayout>

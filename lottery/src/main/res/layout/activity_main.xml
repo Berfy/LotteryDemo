@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mian_rl_mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_app_bottom_tab"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/main_btn_lottery"
+            style="@style/MainActivity_tabarButton"
+            android:drawableTop="@drawable/tabbar_lottery"
+            android:text="@string/lottery"/>
+
+        <Button
+            android:id="@+id/main_btn_result"
+            style="@style/MainActivity_tabarButton"
+            android:drawableTop="@drawable/tabbar_result"
+            android:text="@string/result"/>
+
+        <Button
+            android:id="@+id/main_btn_mine"
+            style="@style/MainActivity_tabarButton"
+            android:drawableTop="@drawable/tabbar_me"
+            android:text="@string/mine"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_rl_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_ll_bottom"/>
+
+</RelativeLayout>

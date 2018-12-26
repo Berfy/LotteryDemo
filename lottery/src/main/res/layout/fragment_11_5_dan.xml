@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/danLabel_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/space_15"
+                android:paddingRight="20dp"
+                android:text=""
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/font_14" />
+
+            <TextView
+                android:id="@+id/danLabel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/space_15"
+                android:paddingRight="20dp"
+                android:text="可选择一个号码"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/font_14" />
+
+            <RelativeLayout
+                android:id="@+id/dan_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/label10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="胆码"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/font_14" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/dan_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/label10" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/mine_line_color" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"
+                android:background="@color/color_DDDDDD" />
+
+            <TextView
+                android:id="@+id/tuoLabel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/space_15"
+                android:paddingRight="20dp"
+                android:text="可选择1~10个号码"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/font_14" />
+
+            <RelativeLayout
+                android:id="@+id/tuo_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/label11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="拖码"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/font_14" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/tuo_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/label11" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"
+                android:background="@color/color_DDDDDD" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_show_info_bottom" />
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sumFragment_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical"
+    tools:context="cn.zcgames.lottery.home.view.fragment.threed.GroupSixFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_line_horizontal_one" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="猜对开奖号码相加的和"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/font_14" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_sum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_horizontal_line_min"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/mine_line_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_20"
+                android:gravity="center"
+                android:text="快速选号"
+                android:textColor="@color/color_333333" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_45"
+                android:layout_marginTop="@dimen/space_10"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/space_25"
+                android:paddingRight="@dimen/space_25">
+
+                <TextView
+                    android:id="@+id/sum_btn_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_round_sum_dxds_left"
+                    android:gravity="center"
+                    android:text="大"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/font_20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sum_btn_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_round_sum_dxds_center"
+                    android:gravity="center"
+                    android:text="小"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/font_20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sum_btn_single"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_round_sum_dxds_center"
+                    android:gravity="center"
+                    android:text="单"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/font_20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sum_btn_double"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_round_sum_dxds_right"
+                    android:gravity="center"
+                    android:text="双"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/font_20"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_show_info_bottom" />
+
+</RelativeLayout>

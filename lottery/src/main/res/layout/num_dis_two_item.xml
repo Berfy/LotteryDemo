@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_dis_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_dis_div"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_d7d6d2"/>
+
+    <LinearLayout
+        android:id="@+id/ll_dis_item_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_30"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dis_trend_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textColor="@color/color_504f58"
+            android:textSize="@dimen/font_12"
+            android:text="出现次数"
+            android:gravity="center"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_d7d6d2"/>
+
+        <TextView
+            android:id="@+id/tv_dis_two_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_504f58"
+            android:textSize="@dimen/font_12"
+            android:text="11"
+            android:gravity="center"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_d7d6d2"/>
+
+        <TextView
+            android:id="@+id/tv_dis_two_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_504f58"
+            android:textSize="@dimen/font_12"
+            android:text="22"
+            android:gravity="center"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_d7d6d2"/>
+
+        <TextView
+            android:id="@+id/tv_dis_two_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_504f58"
+            android:textSize="@dimen/font_12"
+            android:text="33"
+            android:gravity="center"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_d7d6d2"/>
+
+        <TextView
+            android:id="@+id/tv_dis_two_fourth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_504f58"
+            android:textSize="@dimen/font_12"
+            android:text="44"
+            android:gravity="center"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_d7d6d2"/>
+
+        <TextView
+            android:id="@+id/tv_dis_two_fifth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_504f58"
+            android:textSize="@dimen/font_12"
+            android:text="55"
+            android:gravity="center"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_d7d6d2"/>
+
+        <TextView
+            android:id="@+id/tv_dis_two_sixth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/color_504f58"
+            android:textSize="@dimen/font_12"
+            android:text="66"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

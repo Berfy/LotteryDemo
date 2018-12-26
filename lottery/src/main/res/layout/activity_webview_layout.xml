@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <cn.berfy.sdk.mvpbase.view.StatusMarginBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_back_color="#fff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45"
+        android:background="@color/white_normal">
+
+        <ImageButton
+            android:id="@+id/wap_title_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@mipmap/black_back" />
+
+        <TextView
+            android:id="@+id/wap_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/color_black"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/title_right_button"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@drawable/label_message"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/webView_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_3"
+        android:progressDrawable="@drawable/pg"
+        android:visibility="gone" />
+
+    <cn.berfy.sdk.mvpbase.view.XWebView
+        android:id="@+id/pay_webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+</LinearLayout>

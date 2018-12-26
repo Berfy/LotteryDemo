@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.view.activity.fastthree.FastThreeActivity">
+
+    <LinearLayout
+        android:id="@+id/fast3_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <cn.berfy.sdk.mvpbase.view.StatusMarginBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_back_color="@color/color_app_main" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/color_app_main">
+
+            <ImageButton
+                android:id="@+id/title_back"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@mipmap/btn_back" />
+
+            <LinearLayout
+                android:id="@+id/fast3_ll_changeStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="和值"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/imageView_label"
+                    android:layout_width="17dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:src="@drawable/label_jiantou_down"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/title_right_button"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src="@drawable/label_message"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fast3_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fast3_titleBar"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/space_5"
+            android:paddingTop="@dimen/space_5">
+
+            <TextView
+                android:id="@+id/fast3_tv_sequence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_toLeftOf="@+id/fast3_tv_countDown"
+                android:gravity="left|center"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:id="@+id/fast3_tv_countDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_app_main"
+                android:textSize="@dimen/font_20" />
+
+            <LinearLayout
+                android:id="@+id/ll_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/space_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lottery_title_history_result"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/font_12" />
+
+                <ImageView
+                    android:layout_width="@dimen/space_15"
+                    android:layout_height="@dimen/space_15"
+                    android:layout_marginTop="@dimen/space_1"
+                    android:layout_marginLeft="@dimen/space_2"
+                    android:src="@drawable/ic_lottery_history_go" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_horizontal_line_min"
+        android:layout_below="@+id/fast3_tips"
+        android:background="@color/mine_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fast3_ll_selectLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fast3_titleBar"
+        android:visibility="gone">
+
+        <include layout="@layout/view_fast_three_select" />
+    </LinearLayout>
+</RelativeLayout>

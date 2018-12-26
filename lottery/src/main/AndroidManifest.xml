@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.zcgames.lottery">
+
+    <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读取 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 写入权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 创建与删除权限 -->
+    <uses-permission
+        android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 网络状态改变 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Required -->
+    <permission
+        android:name="cn.zcgames.lottery.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="cn.zcgames.lottery.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 整栋、改变网络 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 屏幕常亮 MQTT需要 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <supports-screens android:anyDensity="true" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".app.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name=".ui.activity.MainActivity" -->
+        <!-- android:launchMode="singleTask"/> -->
+
+        <activity
+            android:name=".personal.view.activity.ServiceLineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.VerifyCodeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 国家区号选择页 -->
+        <activity
+            android:name=".country.view.CountryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.view.activity.doublecolor.DoubleColorActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.SetPasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".personal.view.activity.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.AccountInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- android:launchMode="singleTask" -->
+        <activity
+            android:name=".home.view.activity.LotteryOrderActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".personal.view.activity.IdentityInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.WithDrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.WithdrawRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".message.view.activity.MessageCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.RechargeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".personal.view.activity.RechargeOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.SetNicknameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.AccountDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.OrderRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.LotteryOrderRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.LotteryOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.view.activity.PayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.view.activity.doublecolor.DCDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".result.view.activity.ResultDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.MessageSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".message.view.activity.MessageDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.BindingPhoneActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".personal.view.activity.BindingEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.SetLoginPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.ServicePageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 监听网络变化的广播 -->
+        <receiver
+            android:name=".broadcast.NetworkBroadcast"
+            android:label="NetworkConnection">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 友盟AppKey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58e4cab22ae85b05dc000fe2" />
+
+        <!-- QQ账号登录、分享start -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 注意要更换为本app的tencent + appId -->
+                <data android:scheme="tencent1106167784" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- QQ账号登录、分享end -->
+
+
+        <!-- wechat callback -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <!-- wechat callback end -->
+
+        <activity
+            android:name=".home.view.activity.PlayIntroductionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.view.activity.threeD.ThreeDActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.view.activity.threeD.ThreeDDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".result.view.activity.ResultHistoryNewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.view.activity.fastthree.FastThreeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.lottery.alwaycolor.view.activity.AlwaysColorActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.view.activity.sevenhappy.SevenHappyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.AfterPhaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.UploadInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".personal.view.activity.PhaseDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.view.activity.fastthree.FastThreeDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.view.activity.sevenhappy.SHDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.lottery.alwaycolor.view.activity.ACDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.view.activity.arrange3.Arrange3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.view.activity.arrange3.Arrange3DescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.view.activity.arrange5.Arrange5Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.view.activity.arrange5.Arrange5DescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.view.activity.sevenStar.SevenStarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.lottery.elevenfive.view.activity.Eleven5Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.lottery.elevenfive.view.activity.Eleven5DescriptionActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- webview页面 -->
+
+
+        <!-- android7.0以上需要目录权限 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="cn.zcgames.lottery.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <activity
+            android:name=".personal.view.activity.WithDrawWayActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Mqtt Service -->
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+
+        <activity android:name=".personal.view.activity.RechargeDirectionActivity" />
+        <activity android:name=".home.view.activity.WapBannerActivity" />
+
+        <!-- 网易云IM -->
+        <meta-data
+            android:name="cn.berfy.sdk.mvpbase.util.GGlideModule"
+            android:value="GlideModule" />
+
+        <activity
+            android:name=".home.view.activity.TrendActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".personal.view.activity.PayPasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+    </application>
+
+</manifest>

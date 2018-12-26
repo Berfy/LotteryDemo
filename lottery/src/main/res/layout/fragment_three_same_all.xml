@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sumFragment_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical"
+    tools:context="cn.zcgames.lottery.home.view.fragment.threed.GroupSixFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_line_horizontal_one" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/color_333333"
+                android:text="@string/lottery_tip_fast_three_threesameall" />
+
+            <LinearLayout
+                android:id="@+id/fast3_ll_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_btn_round_sum_fragment"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="三同号通选"
+                    android:textSize="@dimen/font_16"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_333333" />
+
+                <TextView
+                    android:id="@+id/tipTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center|top"
+                    android:text="(111、222、333、444、555、666)"
+                    android:textColor="@color/color_7F7F7F"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_show_info_bottom" />
+
+</RelativeLayout>

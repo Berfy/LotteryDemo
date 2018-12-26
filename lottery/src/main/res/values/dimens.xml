@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_list_item_height">60dp</dimen>
+    <dimen name="base_action_bar_height">48.0dip</dimen>
+    <dimen name="register_margin">10.0dp</dimen>
+
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="registerLeftWidth">100dp</dimen>
+
+    <dimen name="tip_icon_size">10dp</dimen>
+    <dimen name="myspace_margin_left">10dp</dimen>
+
+    <dimen name="common_horizontal_margin_left">15dp</dimen>
+    <dimen name="common_horizontal_margin">10dp</dimen>
+    <dimen name="common_vertical_margin">10dp</dimen>
+
+    <dimen name="activity_vertical_margin">@dimen/common_vertical_margin</dimen>
+    <dimen name="activity_top_margin">@dimen/common_vertical_margin</dimen>
+
+    <dimen name="setting_item_height">50dp</dimen>
+
+    <dimen name="btn_login_height">@dimen/space_48</dimen>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+    <!--所有细线的宽度-->
+    <dimen name="common_horizontal_line_min">1dp</dimen>
+    <dimen name="space_162">162dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+
+
+    <dimen name="trend_x_item_width">33dp</dimen>
+    <dimen name="trend_x_item_name_width">44dp</dimen>
+    <dimen name="trend_x_item_height">33dp</dimen>
+    <dimen name="trend_y_item_width">60dp</dimen>
+    <dimen name="trend_y_item_height">33dp</dimen>
+    <dimen name="trend_x_text_size">14dp</dimen>
+    <dimen name="trend_y_text_size">12dp</dimen>
+    <dimen name="trend_content_text_size">14dp</dimen>
+    <dimen name="trend_corner_text_size">14dp</dimen>
+    <dimen name="trend_ball_radius">12dp</dimen>
+    <dimen name="trend_sulcus_width">0dp</dimen>
+    <dimen name="trend_sulcus_height">0dp</dimen>
+    <dimen name="trend_sulcus_bottom">9dp</dimen>
+    <dimen name="trend_time_height">26dp</dimen>
+    <dimen name="trend_top_add_count_width">66dp</dimen>
+
+    <!-- 自定义密码输入框 -->
+    <dimen name="default_ev_border_width">2dp</dimen>
+    <dimen name="default_ev_border_radius">4dp</dimen>
+    <integer name="default_ev_password_length">4</integer>
+    <dimen name="default_ev_password_width">8dp</dimen>
+    <dimen name="default_ev_password_radius">0.5dp</dimen>
+
+</resources>

@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sumFragment_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical"
+    tools:context="cn.zcgames.lottery.home.view.fragment.threed.GroupSixFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="猜对子号（有2个号相同）"
+                android:textColor="@color/color_333333" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/space_50"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_lottery_fast_three_choosenum_tag"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/space_5"
+                    android:text="单选"
+                    android:textColor="@color/white_normal"
+                    android:textSize="@dimen/font_14"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_two_same_single"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_weight="1"
+                    android:text="猜中同号和不同号的组合即中80元"
+                    android:textColor="@color/color_333333" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="同号"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/font_14"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_2Same"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginTop="10dp"
+                android:paddingRight="20dp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="不同号"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/font_14"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_2Different"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginTop="10dp"
+                android:paddingRight="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/space_30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/space_50"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_lottery_fast_three_choosenum_tag"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/space_5"
+                    android:text="复选"
+                    android:textColor="@color/white_normal"
+                    android:textSize="@dimen/font_14"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_two_same_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_weight="1"
+                    android:text="@string/lottery_tip_fast_three_twosamemore"
+                    android:textColor="@color/color_333333" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_towSameMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginTop="10dp"
+                android:paddingRight="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_show_info_bottom" />
+
+</RelativeLayout>

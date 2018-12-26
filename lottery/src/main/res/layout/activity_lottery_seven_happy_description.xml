@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical"
+    tools:context=".home.view.activity.doublecolor.DCDescriptionActivity">
+
+    <include layout="@layout/view_title_bar"/>
+
+    <WebView
+        android:id="@+id/playDesc_wv_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_horizontal_margin_left">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="开奖时间：每周一、三、五21:15开奖"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="玩法规则：30个号选7个=1注（2元），每期开出7个基本号码和1个特殊号码"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/color_app_bg"
+                android:gravity="center_vertical"
+                android:text="奖项设置："/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_horizontal_margin_left"
+                android:layout_marginTop="@dimen/common_horizontal_margin"
+                android:background="@color/mine_line_color"
+                android:padding="0.2dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.7"
+                        android:text="奖级"
+                        android:textColor="@color/color_666666"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="中奖说明"
+                        android:textColor="@color/color_666666"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="中奖条件"
+                        android:textColor="@color/color_666666"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="奖金"
+                        android:textColor="@color/color_666666"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.7"
+                        android:text="一等奖"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="中7基"/>
+
+                    <LinearLayout
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="浮动"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.7"
+                        android:text="二等奖"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="中6基+1特"/>
+
+                    <LinearLayout
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_blue"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="浮动"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.7"
+                        android:text="三等奖"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="中6基"/>
+
+                    <LinearLayout
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="浮动"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.7"
+                        android:text="四等奖"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="中5基+1特"/>
+
+                    <LinearLayout
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_blue"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="200元"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.7"
+                        android:text="五等奖"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="中5基"/>
+
+                    <LinearLayout
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="10元"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.7"
+                        android:text="六等奖"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="中4基+1特"/>
+
+                    <LinearLayout
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_blue"/>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="5元"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_horizontal_line_min">
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.7"
+                        android:text="七等奖"/>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="中4基"/>
+
+                    <LinearLayout
+                        style="@style/doubleColorDesc_tableTv"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/label_ball_red"/>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/doubleColorDesc_tableTv"
+                        android:text="5元"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

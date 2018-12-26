@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.zcgames.lottery.result.view.activity.ResultHistoryActivity">
+
+    <include
+        android:id="@+id/title_view"
+        layout="@layout/view_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/noData_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/label_no_data" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/tips_no_data" />
+
+    </LinearLayout>
+
+    <cn.zcgames.lottery.view.common.refreshview.XRefreshView
+        android:id="@+id/xrefreshview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_buy"
+        android:layout_below="@+id/title_view">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/history_rv_dateList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </cn.zcgames.lottery.view.common.refreshview.XRefreshView>
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_btn_rect"
+        android:text="购买"
+        android:textColor="@color/white_normal"
+        android:textSize="@dimen/font_16" />
+
+</RelativeLayout>

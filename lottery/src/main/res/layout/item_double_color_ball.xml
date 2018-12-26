@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/doubleColorBall_rl_parentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+    <TextView
+        android:id="@+id/doubleColorBall_tv_number"
+        android:layout_width="@dimen/space_45"
+        android:layout_height="@dimen/space_45"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_bg_ball_normal"
+        android:gravity="center"
+        android:text="33"
+        android:textColor="@color/color_red_ball"
+        android:textSize="@dimen/font_16"
+        android:textStyle="bold" />
+
+</RelativeLayout>

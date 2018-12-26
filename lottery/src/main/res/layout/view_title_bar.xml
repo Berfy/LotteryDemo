@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_main"
+    android:orientation="vertical">
+
+    <cn.berfy.sdk.mvpbase.view.StatusMarginBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_back_color="@color/color_app_main"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45">
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="@dimen/space_45"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@mipmap/btn_back"
+            android:visibility="gone"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/color_app_white"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/title_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:src="@drawable/label_setting"
+            android:visibility="gone"
+            android:paddingStart="@dimen/space_35"
+            android:paddingEnd="@dimen/space_15"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/title_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/space_10"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/color_app_white"
+            android:textSize="@dimen/font_14"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+</LinearLayout>

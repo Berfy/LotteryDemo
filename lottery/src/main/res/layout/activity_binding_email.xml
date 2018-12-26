@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical"
+    tools:context="cn.zcgames.lottery.personal.view.activity.BindingPhoneActivity">
+
+    <include layout="@layout/view_title_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_25"
+        android:layout_marginRight="@dimen/space_25"
+        android:layout_marginTop="@dimen/space_45"
+        android:background="@color/mine_line_color"
+        android:orientation="vertical"
+        android:padding="@dimen/common_horizontal_line_min">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/label_login_header"
+                android:contentDescription="@null" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/please_input_bind_email"
+                android:paddingStart="@dimen/space_15"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/color_DDDDDD"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="2dp"
+            android:background="@color/color_DDDDDD" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_8"
+            android:layout_marginTop="@dimen/space_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/verify_code"
+                android:contentDescription="@null" />
+
+            <EditText
+                android:id="@+id/binding_et_verifyCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/mine_input_verify_code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingStart="@dimen/space_15"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_DDDDDD"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/binding_btn_getVerifyCode"
+                android:layout_width="@dimen/space_76"
+                android:layout_height="@dimen/space_24"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_bg_btn_round_corner_blue"
+                android:gravity="center"
+                android:text="@string/mine_get_verify_code"
+                android:textColor="@color/white_normal"
+                android:textSize="@dimen/font_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="2dp"
+            android:background="@color/color_DDDDDD" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bind_finish"
+        style="@style/app_btn_big"
+        android:layout_marginTop="@dimen/space_165"
+        android:enabled="false"
+        android:text="@string/finish" />
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_120"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_d7d6d2" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_empty"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_120"
+        android:layout_below="@id/view_line"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_empty_show_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="11.5"
+            android:background="@color/color_f3f3ea"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="出现次数"
+                android:textColor="@color/color_ae68c6"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="平均遗漏"
+                android:textColor="@color/color_43bf8a"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="最大遗漏"
+                android:textColor="@color/color_f1973a"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="最大连出"
+                android:textColor="@color/color_24c4cb"
+                android:textSize="@dimen/font_12" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_d7d6d2" />
+
+        <RelativeLayout
+            android:id="@+id/rl_empty_show_wait"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_f3f3ea" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_f3f3ea" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="等待开奖"
+                android:textColor="@color/color_f1973a"
+                android:textSize="@dimen/font_18" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lottery_rl_parentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_80"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/lottery_iv_header"
+                android:layout_width="@dimen/space_44"
+                android:layout_height="@dimen/space_44"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="@dimen/space_15" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lottery_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/font_18" />
+
+                <TextView
+                    android:id="@+id/lottery_tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/font_12"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_right_line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space_15"
+            android:layout_marginTop="@dimen/space_15"
+            android:background="@color/mine_line_color"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/mine_line_color"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/font_16" />
+
+</LinearLayout>

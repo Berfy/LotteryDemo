@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_normal"
+    android:orientation="vertical"
+    tools:context="cn.zcgames.lottery.personal.view.activity.FeedbackActivity">
+
+    <include layout="@layout/view_title_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_24"
+        android:background="@color/color_EEEEEE"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/space_15"
+        android:text="选择问题类型"
+        android:textColor="@color/color_888888"
+        android:textSize="@dimen/font_13"
+        tools:ignore="RtlSymmetry" />
+
+    <RadioGroup
+        android:id="@+id/rg_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_15"
+        android:paddingBottom="@dimen/space_10"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_commit_fail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start"
+            android:text="1.提交失败"
+            android:padding="@dimen/space_2"
+            android:button="@null"
+            android:layout_marginEnd="@dimen/space_15"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/font_14" />
+
+        <RadioButton
+            android:id="@+id/rb_wallet_fail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_15"
+            android:layout_marginTop="@dimen/space_6"
+            android:gravity="center_vertical|start"
+            android:button="@null"
+            android:padding="@dimen/space_2"
+            android:text="2.充值未到账"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/font_14" />
+
+        <RadioButton
+            android:id="@+id/rb_identity_fail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_15"
+            android:layout_marginTop="@dimen/space_6"
+            android:padding="@dimen/space_2"
+            android:gravity="center_vertical|start"
+            android:button="@null"
+            android:text="3.身份修改失败"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/font_14" />
+
+        <RadioButton
+            android:id="@+id/rb_cash_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_6"
+            android:layout_marginEnd="@dimen/space_15"
+            android:gravity="center_vertical|start"
+            android:button="@null"
+            android:padding="@dimen/space_2"
+            android:text="4.开奖数额错误"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/font_14" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_182"
+        android:layout_marginEnd="@dimen/space_14"
+        android:layout_marginStart="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_20"
+        android:background="@drawable/shape_bg_square_feedback"
+        android:padding="14dp">
+
+        <EditText
+            android:id="@+id/et_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="top"
+            android:maxLength="300"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:lineSpacingExtra="1dp"
+            android:lineSpacingMultiplier="1"
+            android:letterSpacing="0.03"
+            android:hint="@string/string_editor_detail_hint"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_aaaaaa"
+            android:layout_above="@+id/tv_detail_font_count"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tv_detail_font_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/space_5"
+            android:paddingEnd="@dimen/space_5"
+            android:text="（0/300）"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/font_14"
+            tools:ignore="RtlSymmetry" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_commit_feedback"
+        style="@style/app_btn_big"
+        android:enabled="false"
+        android:layout_marginTop="@dimen/space_90"
+        android:text="@string/btn_submit" />
+
+</LinearLayout>

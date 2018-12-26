@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context=".personal.view.activity.WithDrawWayActivity">
+
+    <include layout="@layout/view_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_34"
+        android:background="@color/color_app_main"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_account_wx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_account_wx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/wxPay"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font_14" />
+
+            <ImageView
+                android:id="@+id/line_account_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_3"
+                android:contentDescription="@null"
+                android:src="@drawable/rb_tag_white_light"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_account_ali"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_account_ali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ali_pay"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font_14" />
+
+            <ImageView
+                android:id="@+id/line_account_ali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_3"
+                android:contentDescription="@null"
+                android:src="@drawable/rb_tag_white_light"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_8"
+        android:background="@color/color_f4f4f4" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/space_33"
+        android:layout_marginTop="@dimen/space_33">
+
+        <ImageView
+            android:id="@+id/iv_account_wx_qr"
+            android:layout_width="@dimen/space_162"
+            android:layout_height="@dimen/space_162"
+            android:contentDescription="@null"
+            android:src="@drawable/qr_holder" />
+
+        <ImageView
+            android:id="@+id/iv_account_ali_qr"
+            android:layout_width="@dimen/space_162"
+            android:layout_height="@dimen/space_162"
+            android:contentDescription="@null"
+            android:src="@drawable/qr_holder"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_select_way"
+        style="@style/app_btn_big"
+        android:enabled="false"
+        android:text="@string/select" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_13"
+        android:layout_marginStart="@dimen/space_15"
+        android:layout_marginEnd="@dimen/space_18"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/tips_withdraw_tip"
+        android:textColor="@color/color_aaaaaa"
+        android:textSize="@dimen/font_10" />
+
+</LinearLayout>

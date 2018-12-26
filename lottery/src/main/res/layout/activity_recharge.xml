@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical"
+    tools:context="cn.zcgames.lottery.personal.view.activity.RechargeActivity">
+
+    <include
+        android:id="@+id/title_view"
+        layout="@layout/view_title_bar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_15"
+            android:text="@string/select_cash"
+            android:textColor="@color/color_888888"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tv_recharge_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_13"
+            android:layout_marginEnd="@dimen/space_8"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:text="@string/recharge_instructions"
+            android:textColor="@color/color_999999"
+            android:drawableEnd="@drawable/arrow"
+            android:textSize="@dimen/font_12"
+            android:focusable="true" />
+
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recharge_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_38"
+        android:text="@string/select_pay_type"
+        android:textColor="@color/color_888888"
+        android:textSize="@dimen/font_12" />
+
+    <LinearLayout
+        android:id="@+id/ll_aliPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_13"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/space_9"
+            android:drawableStart="@drawable/ali_pay_icon"
+            android:text="@string/alipay"
+            android:textColor="@color/color_181927"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tv_aliPay"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/space_15"
+            android:background="@drawable/selector_pay_type_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wxPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_18"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/space_9"
+            android:drawableStart="@drawable/wx_pay_icon"
+            android:text="@string/wxpay"
+            android:textColor="@color/color_181927"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tv_wx"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/space_15"
+            android:background="@drawable/selector_pay_type_btn" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_go_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_login_height"
+        android:layout_marginEnd="@dimen/space_7"
+        android:layout_marginStart="@dimen/space_7"
+        android:layout_marginTop="@dimen/space_20"
+        android:background="@drawable/selector_btn"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/btn_recharge"
+        android:textAllCaps="false"
+        android:textColor="@color/color_app_white"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_18"
+        android:gravity="center"
+        android:text="@string/tips_recharge"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/font_12" />
+</LinearLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/rvLabel1_tv"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_gray"
+            android:gravity="center"
+            android:text="第一位"
+            android:textSize="12dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvData1_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rvLabel1_tv"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/mine_line_color"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/rvLabel2_tv"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_gray"
+            android:gravity="center"
+            android:text="第二位"
+            android:textSize="12dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvData2_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rvLabel2_tv"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/mine_line_color"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/rvLabel3_tv"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_gray"
+            android:gravity="center"
+            android:text="第三位"
+            android:textSize="12dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvData3_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rvLabel3_tv"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/mine_line_color"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/rvLabel4_tv"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_gray"
+            android:gravity="center"
+            android:text="第四位"
+            android:textSize="12dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvData4_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rvLabel4_tv"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/mine_line_color"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/rvLabel5_tv"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_gray"
+            android:gravity="center"
+            android:text="第五位"
+            android:textSize="12dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvData5_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rvLabel5_tv"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/mine_line_color"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/rvLabel6_tv"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_gray"
+            android:gravity="center"
+            android:text="第六位"
+            android:textSize="12dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvData6_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rvLabel6_tv"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/mine_line_color"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/rvLabel7_tv"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_gray"
+            android:gravity="center"
+            android:text="第七位"
+            android:textSize="12dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvData7_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rvLabel7_tv"/>
+
+    </RelativeLayout>
+</LinearLayout>

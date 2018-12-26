@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xrefreshview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f3f3f3"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title_bar" />
+
+    <!--<cn.zcgames.lottery.ui.common.refreshview.XRefreshView-->
+    <!--android:id="@+id/refreshview_xscrooll"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--xrefreshview:isHeightMatchParent="true"-->
+    <!--xrefreshview:isWidthMatchParent="true">-->
+
+    <cn.zcgames.lottery.view.common.refreshview.XScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/parent_ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <cn.zcgames.lottery.view.common.adcycleviewpager.BannerView
+                android:id="@+id/bannelView"
+                android:layout_width="match_parent"
+                android:layout_height="150dip" />
+
+            <LinearLayout
+                android:id="@+id/layout_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/white_normal"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/space_15"
+                    android:paddingRight="@dimen/space_15">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/label_gonggao" />
+
+                    <ViewFlipper
+                        android:id="@+id/lottery_vf"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_5">
+
+                    </ViewFlipper>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/v_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_6" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_10"
+                android:background="@color/white_normal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lottery_rv_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </cn.zcgames.lottery.view.common.refreshview.XScrollView>
+    <!--</cn.zcgames.lottery.ui.common.refreshview.XRefreshView>-->
+</LinearLayout>

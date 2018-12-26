@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_00000000">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_20000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/changeHeader_tv_select"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn_round"
+            android:gravity="center"
+            android:text="从相册中选"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/changeHeader_tv_takePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_round"
+            android:gravity="center"
+            android:text="拍照"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/changeHeader_tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_btn_round"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

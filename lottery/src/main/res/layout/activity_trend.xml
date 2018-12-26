@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/trend_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <cn.berfy.sdk.mvpbase.view.StatusMarginBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_back_color="@color/color_app_main" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/color_app_main">
+
+            <ImageButton
+                android:id="@+id/ib_title_back"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@mipmap/btn_back" />
+
+            <LinearLayout
+                android:id="@+id/trend_play_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                tools:ignore="RelativeOverlap,UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/tv_trend_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_18" />
+
+                <ImageView
+                    android:id="@+id/iv_trend_label"
+                    android:layout_width="17dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/label_jiantou_down"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ib_refresh_trend"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_trend_refresh"
+                    android:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/ib_right_button"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@drawable/trend_settting"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/trend_titleBar"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/trend_selectLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/trend_titleBar"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/fast_three_select_view"
+            layout="@layout/view_fast_three_select"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/eleven_five_select_view"
+            layout="@layout/view_11_5_select"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/always_color_select_view"
+            layout="@layout/view_always_color_select"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <cn.zcgames.lottery.home.view.fragment.ui.LottoTrendView
+        android:id="@+id/lottery_trend_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+</RelativeLayout>

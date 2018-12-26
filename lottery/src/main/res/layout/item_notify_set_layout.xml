@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical"
+    tools:context="cn.zcgames.lottery.personal.view.activity.MessageSettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_lottery_notify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_52"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/space_15"
+            android:visibility="visible"
+            android:textColor="@color/color_666666"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/tv_lottery_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="时时彩"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/font_14" />
+
+            <ToggleButton
+                android:id="@+id/toggle_lottery"
+                android:layout_width="@dimen/space_51"
+                android:layout_height="@dimen/space_32"
+               android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/space_15"
+                android:background="@drawable/selector_switch"
+                android:text="@null"
+                android:textOff="@null"
+                android:textOn="@null" />
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/head_line"
+            layout="@layout/view_line_horizontal_one"/>
+    </LinearLayout>
+
+</LinearLayout>

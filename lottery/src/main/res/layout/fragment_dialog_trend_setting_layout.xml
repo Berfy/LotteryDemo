@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_20"
+        android:background="@drawable/shape_bg_trend_setting"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_20"
+        android:paddingTop="@dimen/space_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_15">
+
+            <View
+                android:layout_width="@dimen/space_25"
+                android:layout_height="@dimen/space_25"
+                android:background="@drawable/ic_trend_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:text="走势图设置"
+                android:textColor="@color/color_7e7e7e"
+                android:textSize="@dimen/font_14" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@color/color_f1f1f1" />
+
+        <LinearLayout
+            android:id="@+id/ll_period"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/trend_setting_title_period" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/rb_period1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_period_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_trend_setting_checkbox"
+                        android:paddingLeft="@dimen/space_10"
+                        android:text="@string/trend_setting_period1" />
+
+                    <RadioButton
+                        android:id="@+id/rb_period_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_trend_setting_checkbox"
+                        android:paddingLeft="@dimen/space_10"
+                        android:text="@string/trend_setting_period2" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rb_period2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_period_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_trend_setting_checkbox"
+                        android:paddingLeft="@dimen/space_10"
+                        android:text="@string/trend_setting_period3" />
+
+                    <RadioButton
+                        android:id="@+id/rb_period_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_trend_setting_checkbox"
+                        android:paddingLeft="@dimen/space_10"
+                        android:text="@string/trend_setting_period4" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_20"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/trend_setting_title_list" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rb_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_list_asc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_trend_setting_checkbox"
+                        android:paddingLeft="@dimen/space_10"
+                        android:text="@string/trend_setting_list_asc" />
+
+                    <RadioButton
+                        android:id="@+id/rb_list_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_trend_setting_checkbox"
+                        android:paddingLeft="@dimen/space_10"
+                        android:text="@string/trend_setting_list_desc" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_20"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/trend_setting_title_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rb_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_line_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_trend_setting_checkbox"
+                        android:paddingLeft="@dimen/space_10"
+                        android:text="@string/trend_setting_show" />
+
+                    <RadioButton
+                        android:id="@+id/rb_line_dismiss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_trend_setting_checkbox"
+                        android:paddingLeft="@dimen/space_10"
+                        android:text="@string/trend_setting_dismiss" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_yilou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_20"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/trend_setting_title_yilou" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rb_yilou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_yilou_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_trend_setting_checkbox"
+                        android:paddingLeft="@dimen/space_10"
+                        android:text="@string/trend_setting_show" />
+
+                    <RadioButton
+                        android:id="@+id/rb_yilou_dismiss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_trend_setting_checkbox"
+                        android:paddingLeft="@dimen/space_10"
+                        android:text="@string/trend_setting_dismiss" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_statistic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_20"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/trend_setting_title_statistic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rb_statistic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_statistic_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_trend_setting_checkbox"
+                        android:paddingLeft="@dimen/space_10"
+                        android:text="@string/trend_setting_show" />
+
+                    <RadioButton
+                        android:id="@+id/rb_statistic_dismiss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/selector_trend_setting_checkbox"
+                        android:paddingLeft="@dimen/space_10"
+                        android:text="@string/trend_setting_dismiss" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center"
+            android:text="@string/trend_setting_tip"
+            android:textColor="@color/color_BBBBBB"
+            android:textSize="@dimen/font_10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_20"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_20">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_trend_setting_cancel"
+                android:text="@string/btn_cancel"
+                android:textColor="@color/color_7e7e7e"
+                android:textSize="@dimen/font_14" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn"
+                android:text="@string/btn_ok"
+                android:textColor="@color/color_FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="AppTheme" parent="BaseAppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <!--<style name="Splash" parent="@style/AppTheme">-->
+    <!--</style>-->
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.view.adapter.LotteryHistoryAdapter">
+
+    <LinearLayout
+        android:id="@+id/doubleColor_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <cn.berfy.sdk.mvpbase.view.StatusMarginBar
+            app:bar_back_color="@color/color_app_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/color_app_main">
+
+            <ImageButton
+                android:id="@+id/title_back"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@mipmap/btn_back"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/doubleColor_ll_changeStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="双色球"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/imageView_label"
+                    android:layout_width="17dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:src="@drawable/label_jiantou_down" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/title_right_button"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src="@drawable/label_message"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/doubleColor_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doubleColor_titleBar"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_5">
+
+        <TextView
+            android:id="@+id/doubleColor_tv_sequence"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="--"
+            android:textColor="@color/color_app_main"
+            android:textSize="@dimen/font_12" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_horizontal_line_min"
+        android:layout_below="@+id/doubleColor_tips"
+        android:background="@color/mine_line_color" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:background="@color/color_FFFFFF"
+        android:paddingBottom="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 普通投注方式 start-->
+            <include
+                android:id="@+id/view_normal"
+                layout="@layout/view_double_color_nomal" />
+            <!-- 普通投注方式 end-->
+
+            <!-- 胆拖投注方式 start-->
+            <include
+                android:id="@+id/view_dantuo"
+                layout="@layout/view_double_color_dantuo"
+                android:visibility="gone" />
+            <!-- 胆拖投注方式 end-->
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/view_show_info_bottom" />
+
+    <LinearLayout
+        android:id="@+id/doubleColor_rl_selectStyleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/doubleColor_titleBar"
+        android:background="@color/color_00000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/btn_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/mine_line_color"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/common_horizontal_line_min"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/doubleColor_tv_normal"
+                    style="@style/sumFragment_select_playStyle_btn"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/lottery_touzhu_normal" />
+
+
+                <TextView
+                    android:id="@+id/doubleColor_tv_dantuo"
+                    style="@style/sumFragment_select_playStyle_btn"
+                    android:text="@string/lottery_touzhu_dantuo" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_00000000"
+            android:clickable="true" />
+    </LinearLayout>
+
+</RelativeLayout>
